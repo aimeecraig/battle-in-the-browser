@@ -29,9 +29,9 @@ describe Game do
     end
   end
 
-  describe '#has_someone_lost' do
+  describe '#someone_lost?' do
     it "returns true if a player's HP is 0" do
-      expect(subject.has_someone_lost).to eq true
+      expect(subject.someone_lost?).to eq true
     end
   end
 

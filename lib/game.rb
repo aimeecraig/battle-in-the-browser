@@ -1,6 +1,14 @@
 class Game
   attr_reader :current_player, :opposing_player
 
+  def self.create(player_1, player_2)
+    @game = Game.new(player_1, player_2)
+  end
+
+  def self.instance
+    @game
+  end
+
   def initialize(player_1, player_2)
     @players = [player_1, player_2]
     @current_player = player_1
@@ -23,7 +31,7 @@ class Game
     @current_player, @opposing_player = @opposing_player, @current_player
   end
 
-  def has_someone_lost
+  def someone_lost?
     player_1.hit_points <= 0 || player_2.hit_points <= 0
   end
 

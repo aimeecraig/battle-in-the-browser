@@ -23,4 +23,16 @@ class Game
     @current_player, @opposing_player = @opposing_player, @current_player
   end
 
+  def has_someone_lost
+    player_1.hit_points <= 0 || player_2.hit_points <= 0
+  end
+
+  def loser
+    if player_1.hit_points <= 0
+      player_1.name
+    elsif player_2.hit_points <= 0
+      player_2.name
+    end
+  end
+
 end

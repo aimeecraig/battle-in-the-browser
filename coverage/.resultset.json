@@ -56,15 +56,20 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/aimeecraig/Projects/Makers Academy/Week 3/battle-in-the-browser/spec/game_spec.rb": [
         1,
         null,
         1,
-        5,
-        5,
-        5,
+        7,
+        7,
+        7,
         null,
         1,
         1,
@@ -84,6 +89,18 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -119,6 +136,6 @@
         null
       ]
     },
-    "timestamp": 1539869472
+    "timestamp": 1539871431
   }
 }

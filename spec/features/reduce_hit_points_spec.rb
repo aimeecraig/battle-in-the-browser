@@ -14,4 +14,9 @@ feature 'Hit points' do
     expect(page).not_to have_content 'Dave: 100HP'
     expect(page).to have_content 'Dave: 90HP'
   end
+
+  scenario 'player 2 loses all HP and receives a you lose message' do
+    lose_all_hp
+    expect(page).to have_content 'Mittens loses!'
+  end
 end

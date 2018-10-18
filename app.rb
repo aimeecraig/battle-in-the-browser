@@ -18,7 +18,6 @@ class Battle < Sinatra::Base
 
   get '/play' do
     @game = $game
-    @game.swap_player
     erb :play
   end
 
@@ -26,6 +25,12 @@ class Battle < Sinatra::Base
     @game = $game
     @game.attack(@game.opposing_player)
     erb :attack
+  end
+
+  post '/switch-turns' do
+    @game = $game
+    @game.swap_player
+    redirect '/play'
   end
 
   # start the server if ruby file executed directly

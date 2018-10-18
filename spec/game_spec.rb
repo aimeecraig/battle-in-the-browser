@@ -17,15 +17,15 @@ describe Game do
 
   describe '#attack' do
     it 'damages the player' do
-    expect(player_2).to receive(:receive_damage)
-    subject.attack(player_2)
+      expect(player_2).to receive(:receive_damage)
+      subject.attack(player_2)
     end
   end
 
   describe '#swap_player' do
     it 'switches the players' do
       subject.swap_player
-      expect(subject.current_player).to eq player_1
+      expect(subject.current_player).to eq player_2
     end
   end
 end

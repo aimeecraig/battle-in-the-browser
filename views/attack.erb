@@ -2,6 +2,6 @@
 <br>
 <%= @game.opposing_player.name%>: <%= @game.opposing_player.hit_points %>HP
 <br>
-<form action="/play">
+<form action="/switch-turns" method="post">
   <input type="submit" value="Next turn">
 </form>
